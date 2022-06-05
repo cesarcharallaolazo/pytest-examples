@@ -1,13 +1,13 @@
 import pytest
 
-from student import StudentDB
+from src.student import StudentDB
 
 
 @pytest.fixture(scope="module")
 def db():
     print('---setup---')
     db = StudentDB()
-    db.connect('data.json')
+    db.connect('./src/data.json')
     yield db
     print('---teardown---')
     db.close()
