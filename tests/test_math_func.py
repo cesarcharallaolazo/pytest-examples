@@ -1,6 +1,4 @@
-import sys
 from src import math_func
-import pytest
 
 
 # @pytest.mark.number
@@ -33,7 +31,6 @@ def test_product_strings():
     assert result == 'Hello Hello '
     assert type(result) is str
     assert 'Hello' in result
-
 
 # @pytest.mark.parametrize(
 #     'num1,num2,result',
