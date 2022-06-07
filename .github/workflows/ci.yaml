@@ -5,7 +5,7 @@ jobs:
     runs-on: [ubuntu-latest]
     #container: docker://dvcorg/cml-py3:latest
     #container: docker://ghcr.io/iterative/cml:0-dvc2-base1
-    container: python:3.8
+    container: pythonx:3.8
     steps:
       - uses: actions/checkout@v2
 
